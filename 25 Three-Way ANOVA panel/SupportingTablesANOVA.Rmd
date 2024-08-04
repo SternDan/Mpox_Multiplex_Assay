@@ -1,0 +1,253 @@
+---
+title: "Supporting Tables ANOVA"
+author: "Daniel Stern"
+date: "2024-04-19"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(flextable)
+  library(officer)
+})
+```
+
+```{r calcs}
+
+load("output/tables.RData")
+```
+
+## Results of three-way ANOVA
+
+Supporting Table. Results of three-way ANOVA for the Acute dataset on IgG data.
+```{r anovaAcuteIgG}
+(   anovaAcuteIgG
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(2:3), digits = 0 ) 
+    %>% colformat_double(j = c(4:7), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Results of three-way ANOVA for the Acute dataset on IgM data.
+```{r anovaAcuteIgM}
+(   anovaAcuteIgM
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(2:3), digits = 0 ) 
+    %>% colformat_double(j = c(4:7), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Results of three-way ANOVA for the Epi dataset on IgG data.
+```{r anovaEpiIgG}
+(   anovaEpiIgG
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(2:3), digits = 0 ) 
+    %>% colformat_double(j = c(4:7), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Results of three-way ANOVA for the Epi dataset on IgM data.
+```{r anovaAEpiIgM}
+(   anovaEpiIgM
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(2:3), digits = 0 ) 
+    %>% colformat_double(j = c(4:7), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+
+## Simple main effects for the difference between the three serostatuses (pre, MVA, Mpox)
+
+Supporting Table. Simple main effects for the difference between the three serostatuses (pre, MVA, Mpox)
+in depence on the antigen on the Acute dataset using IgG data.
+```{r simplesimpleAcuteIgG}
+(   simplesimpleAcuteIgG
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(4:5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Simple main effects for the difference between the three serostatuses (pre, MVA, Mpox)
+in depence on the antigen on the Acute dataset using IgM data.
+```{r simplesimpleAcuteIgM}
+(   simplesimpleAcuteIgM
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(4:5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Simple main effects for the difference between the three serostatuses (pre, MVA, Mpox)
+in depence on the antigen on the Epi dataset using IgG data.
+```{r simplesimpleEpiIgG}
+(   simplesimpleEpiIgG
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(4:5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Simple main effects for the difference between the three serostatuses (pre, MVA, Mpox)
+in depence on the antigen on the Epi dataset using IgM data.
+```{r simplesimpleEpiIgM}
+(   simplesimpleEpiIgM
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(4:5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+
+
+
+## Pairwise comparisons
+
+Supporting Table. Pairwise comparisons on the Acute dataset using IgG data.
+```{r pairwiseIgG}
+(   pairwiseAcuteIgG
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table.Pairwise comparisons on the Acute dataset using IgM data.
+```{r pairwiseAcuteIgM}
+(   pairwiseAcuteIgM
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Pairwise comparisons on the Epi dataset using IgG data.
+```{r pairwiseEpiIgG}
+(   pairwiseEpiIgG
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+Supporting Table. Pairwise comparisons on the Epi dataset using IgM data.
+```{r pairwiseEpiIgM}
+(   pairwiseEpiIgM
+    %>% flextable()
+    #%>% set_header_labels( Effect = "Tree Age (days)"
+    #                     , DFn = "Mean trunk circumference (mm)"
+    #                     , Dfd = "SD of trunk circumference (mm)"
+    #                     )
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+    %>% colformat_double(j = c(5), digits = 0 ) 
+    %>% colformat_double(j = c(6:9), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+
+
