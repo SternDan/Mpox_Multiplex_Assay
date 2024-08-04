@@ -14,6 +14,8 @@ The following figures and/or tables are generated:
 ## "1 Import Data"
 Data wrangling of raw data to generate clean data frames for subsequent use in other scripts ("3 Quantify Normalize Data"). Raw data files are in the "input" folder, and the R script `generate_dataInput_final.R` contains functions to import ELISA and Bio-Plex results. Two data frames containing the measured data from a panel of CPXV positive and negative samples, samples of an in-house MVA vaccination panel, and MPXV positive samples, and a negative control panel from MMR diagnostics are generated. `Description.html` contains more information on the data frames.
 
+Input data folder is included as zip file. Unzip to "input" folder to be able to execute to R code
+
 Generated data is contained in two files:
 - `dataInput.Rdata`
 - `dataInputNK.Rdata`
