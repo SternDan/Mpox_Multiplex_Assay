@@ -1,0 +1,14 @@
+name: Spox_Auswertung
+title: Spox_Auswertung
+username:
+account: sternd
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9488276
+bundleId: 7481973
+url: https://sternd.shinyapps.io/Spox_Auswertung/
+when: 1689933707.59467
+lastSyncTime: 1689933707.59467
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|app_Spox_analysis.R|app_Spox_analysis_V3_ohne_drLumi.R|app_testzahlabfrage_6_19_Opendata.R|Mpox_Analysis.R|sourcecode_Spox_analysis.R|sourcecode_Spox_analysis_V2.R|sourcecode_Spox_analysis_V3_ohne_drLumi.R|input|output
