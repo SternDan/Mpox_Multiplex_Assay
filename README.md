@@ -195,8 +195,8 @@ Depends on the following input files:
 - `../16 Compare Panels/output/dataInputPanelANOVA.Rdata`
 
 Generates the following output files:
-- `output/boxplotsAnova.Rdata` (Combined boxplot for generation of Figure 3)
-- `output/tables.Rdata` (Generation of supporting tables)
+- `output/boxplotsAnova.Rdata` (Combined boxplot for generation of Figure 3) -> Not contained: file too big for upload: will be posted to figshare
+- `output/tables.Rdata` (Generation of supporting tables) -> Not contained: file too big for upload: will be posted to figshare
 
 The following figures and/or tables are generated:
 - Figure 3
