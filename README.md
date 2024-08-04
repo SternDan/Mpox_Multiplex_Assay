@@ -98,7 +98,7 @@ The following figures and/or tables are generated:
 - Parts of Figure S12
 
 ## "11 Shiny App Spox"
-A Shiny app to analyze results of measurements for the epi-panel. It analyzes results of two plates simultaneously. Metadata is loaded from Word protocol files, MFI data are quantified using VIG as a standard (IgG data for both IgG and IgM). Predictions based on an early LDA model trained on acute data are also contained but not used for the final predictions. The folder contains input and output from one exemplarily run. Full 
+A Shiny app to analyze results of measurements for the epi-panel. It analyzes results of two plates simultaneously. Metadata is loaded from Word protocol files, MFI data are quantified using VIG as a standard (IgG data for both IgG and IgM). Predictions based on an early LDA model trained on acute data are also contained but not used for the final predictions. The folder contains input and output from one exemplarly run. Full 
 input and output files can be provided, if needed. 
 
 Depends on the following input files:
