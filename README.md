@@ -5,6 +5,10 @@ The following data and analysis files are contained in the subfolders accompanyi
 "Differentiation between mpox infection and MVA immunization by a novel machine learning-supported 
 serological multiplex assay" by Surtees et al.
 
+## Installation and usage
+Install R (version 4.3.0) and R Studio (2023-06-2). Install all necessary packages, which are listed in each R script before running the scripts. All necessary data files (input and output) are contained within 
+the different folders, except where stated differently. Some input and meta files were removed due to data protections, others were removed due to size restrictions. If needed, these files can be made available confidentaly, after contact. Please read the descriptions below to learn about potential dependencies between different scripts.
+
 ## 0 Analyse Coupling
 Raw data files in the "input" folder and R script `analyseCoupling_final.R` containing measurements for the reactivity of orthopoxvirus-specific antigens against different mono- and polyclonal but monospecific antibodies (a) or vaccinia immune globulin (VIG) against different coupling batches (b).
 
