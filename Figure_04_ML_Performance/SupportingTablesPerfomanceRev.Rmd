@@ -1,0 +1,44 @@
+---
+title: "Supporting Table ML-Performance Rev"
+author: "Daniel Stern"
+date: "2025-03-04"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(flextable)
+  library(officer)
+})
+```
+
+```{r calcs}
+
+load("output/supTablePerformanceRev.RData")
+```
+
+## Results of ML testing
+
+Supporting Table. Performance parameters for tested ML-algorithms stratified by seropanel used for training and testing and antibody isotypes.
+```{r anovaAcuteIgG}
+(   supTable
+    %>% flextable()
+    %>% set_header_labels(seropanel = "Seropanel (traing test)"
+                         , antibody = "Antibody Isotypes"
+                         , score = "Performance parameter")
+    %>% hline_bottom( part = "header"
+                      , border = fp_border_default( width = 0.5 ) # inches
+    )
+   # %>% colformat_double(j = c(2:3), digits = 0 ) 
+  #  %>% colformat_double(j = c(4:7), digits = 2 )
+    %>% width( j = 2:3, width = 1.5 ) # inches
+)
+```
+
+
+
+
+
+
