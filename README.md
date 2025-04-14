@@ -66,7 +66,7 @@ The following output files are generated:
 - plotMPXVMVAPre.pdf: Plot of classification for ensemble prediction
 - STableEnsemblePrediction.xlsx: Table S10 with all data for the validaton panel
 
-## Figure_S04_Bead_coupling
+## Figure_S05_Bead_coupling
 Generates plot for coupling control and batch-to-batch variabiliy using in the R script analyseCoupling.R.
 
 Depends on the following input files:
@@ -76,7 +76,7 @@ Depends on the following input files:
 The following output files are generated:
 - plotCoupling.png: Figure S4 containing the plots for the coupling control and the batch-to-batch variability
 
-## Figure_S05_06_Exclusion_Training
+## Figure_S06_07_Exclusion_Training
 Generates plots and population-based cut-off values used to exclude samples with hints on unrecognized infections from the epi panel from ML based training and testing. Not to confuse with more robust cut-off values, which have been generated to classify sera based on binary classifiers as described in Figure_S07_ROC.
 
 Depends on the following input files: 
@@ -87,7 +87,7 @@ The following output files are generated (amoung others):
 - SFig_plotCombinedyoung.png: Figure S5 Comparison between antigens and panels in young population
 - SFig_plotROC.png: Figure S6 ROC curve
 
-## Figure_S07_Classical_ROC
+## Figure_S08_Classical_ROC
 Generate plot for the performance of single antigens based on ROC analysis as well as threshold values. 
 
 Depends on the following input files: 
@@ -95,5 +95,5 @@ Depends on the following input files:
 - `input/plotImprovePerformance.Rdata`
 
 The following output files are generated:
-- plotFig6.png: Figure S7
+- plotFig6.png: Figure S8
 - ROC_parameters_classic.xlsx: Table S11 with performance parameters for ROC analysis for single antigens
